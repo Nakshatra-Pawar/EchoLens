@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "EchoLens: Voice-Enhanced Image Accessibility for the Visually Impaired",
+    "version": "2.0",
+    "description": "EchoLens provides voiceover descriptions for web images, making them accessible to visually impaired users.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
